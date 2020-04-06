@@ -1,0 +1,245 @@
+<!--В данных страницах после изучения js будут небольшие изменение (слайдер, бургер меню и тд)
+в последний момент слетели все картинки, поэтому поставила рандомные
+    сверстаны странциы - главная, книга, о нас
+    формы - объединенная форма регистрации и входа(сделала через css, потом переделаю под js)
+    есть переходы по id (например литературные новинки на главной страницу)-->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/adapt.css">
+
+    <link rel="icon" href="../img/icons8-книга-100.png">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0da357b00a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!--header_fixed  можно добавитьь-->
+<header class="header  container">
+
+    <div class="container_header header_inner flex_row  flex-xs-column space_around">
+        <div class="flex-5 header_logo header_logo_g">WordOfLit</div>
+        <nav class="flex-7 header_inner_nav">
+            <ul class="space_around  flex_row"> <!--flex-xs-column добавится при js-->
+                <li><a href="main.html">Главная</a> </li>
+                <li><a href="books.html">Книги</a> </li>
+                <li><a href="#">Рецензии</a> </li>
+                <li><a href="#auth">Войти</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <button class="nav_burger" type="button">
+        <span class="nav_burger_item"></span>
+    </button>
+    <!--    </div>-->
+</header>
+<main>
+
+    <div class="intro flex_column">
+        <div class="container">
+            <div class="intro_container">
+                <h1 class="intro_container_title">Литература - это новости, которые не устаревают.</h1>
+                <a class="btn" href="#new">Литературные новинки</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <section class="container section_header">
+        <h3 class="section_suptitle">Есть ли у нас выбор книг?</h3>
+        <div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam atque harum incidunt maxime necessitatibus odio omnis optio, reprehenderit temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt dicta dolores incidunt labore laboriosam natus unde vel. Atque, voluptatum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam atque harum incidunt maxime necessitatibus odio omnis optio, reprehenderit temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt dicta dolores incidunt labore laboriosam natus unde vel. Atque, voluptatum?</p>
+        </div>
+    </section>
+    <!--    Статистика книг сайта-->
+    <div class="statistic">
+        <!--        <div class="">-->
+        <div class="stat flex_row-sm">
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">100</div>
+                <div class="stat_text">Классикических книг</div>
+            </div>
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">79</div>
+                <div class="stat_text">Детективов</div>
+            </div>
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">30</div>
+                <div class="stat_text">Англоязычных книг</div>
+            </div>
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">49</div>
+                <div class="stat_text">Сборников стихотворений</div>
+            </div>
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">20</div>
+                <div class="stat_text">Фэнтези</div>
+            </div>
+            <div class="flex -2 flex-sm-4 statistic_item">
+                <div class="stat_number">100+</div>
+                <div class="stat_text">Рецензий</div>
+            </div>
+        </div>
+        <!--        </div>-->
+    </div>
+    <!--    Статистика книг сайта-->
+
+
+    <section class="container top_red section_header">
+        <h3 class="section_suptitle">Выбор редакции</h3>
+        <div class="top container">
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--    Тут будет слайдер-->
+    <section class="section_header">
+        <h3 class="section_suptitle">Последние реценции</h3>
+    </section>
+
+    <div class="section_recenz section_gray ">
+        <div class="recenz container">
+            <div class="flex_row">
+                <div class="flex-3 recenz_img">
+                    <img src="https://picsum.photos/700">
+                </div>
+                <div class="flex-9 ">
+                    <div class="recenz_text"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, obcaecati.</q></div>
+                    <div class="recenz_auth">Дмитрий С.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Тут будет конец слайдера-->
+
+
+    <section id="new" class="container section_header">
+        <h3 class="section_suptitle">Новинки</h3>
+        <div class="top container">
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-4">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+        </div>
+        <div class="top container new-2">
+            <div class="flex-3">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-3">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-3">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+            <div class="flex-3">
+                <a href="#"><img src="https://picsum.photos/700" alt="book"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</main>
+
+<footer class="flex_row flex-xs-column">
+    <section class="flex-4">
+        <a class="foot1" href="about_us.html">O нас</a>
+    </section>
+    <section class="flex-4">
+        <a class="foot2"  href="#to">Написать нам</a>
+    </section>
+    <section class="not flex-4">
+        <p>Соц. сети</p>
+        <div>
+            <nav class=" social_footer">
+                <!--            <a href="#" classass="facebook"></a>-->
+                <!--            <a href="#" class="instagram"></a>-->
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </nav>
+        </div>
+    </section>
+</footer>
+
+
+<div class="modal dws-wrapper" id="auth">
+    <div class="dws-form">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label class="tab" for="tab1" title="Вкладка1">Авторизация</label>
+
+        <input type="radio" id="tab2" name="tabs">
+        <label class="tab" for="tab2" title="Вкладка2">Регистрация</label>
+
+        <form id="form1" class="tab-form">
+            <input class="input" type="email" placeholder="e-mail">
+            <input class="input" type="password" placeholder="password">
+            <input type="submit" class="input_form"  value="Войти">
+            <ul class="social">
+                <li><a href="#"><i class="fa  fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <a href="#"><p>Я забыл свой e-mail или пароль</p></a>
+        </form>
+
+        <form id="form2" class="tab-form">
+            <input  required  minlength="3" class="input" type="text" placeholder="Введите имя">
+            <input  required  minlength="5" class="input" type="email" placeholder="Введите e-mail адрес">
+            <input  required  minlength="10" class="input" type="password" placeholder="password">
+
+            <input type="submit" class="input_form" value="Регистрация">
+            <div class="recover">
+                <input class="flex-3" type="checkbox" required>
+                <label class="flex-9">Ознакомлен(-а) и принимаю <a href="#"> условия регистрации</a></label>
+            </div>
+        </form>
+    </div>
+
+    <a class="close-modal" href="#0">X</a>
+</div>
+
+
+<div class="modal dws-wrapper" id="to">
+    <div class="dws-form-msg">
+        <label  class="tab3" for="form">Обратная связь</label>
+        <form id="form">
+            <input required  minlength="3" class="input" type="text" placeholder="Тема">
+            <input  required  minlength="3" class="input" type="text" placeholder="Ключевые слова">
+            <textarea required minlength="20" name="description" id="description" placeholder="Введите сообщение"></textarea>
+            <input type="submit" class="input_form"  value="Отправить">
+        </form>
+
+    </div>
+
+    <a class="close-modal" href="#0">X</a>
+</div>
+</body>
+</html>

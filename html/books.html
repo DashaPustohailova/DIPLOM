@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Книга</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/books.css">
+    <link rel="stylesheet" href="../css/adapt.css">
+    <link rel="icon" href="../img/icons8-книга-100.png">
+    <script src="https://kit.fontawesome.com/0da357b00a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header class="book">
+    <div class="container_header header_inner flex_row  flex-xs-column space_around">
+        <div class="flex-5 header_logo">WordOfLit</div>
+        <nav class="flex-7">
+            <ul class="flex_row  space_around flex-xs-column ">
+                <li><a href="main.html">Главная</a> </li>
+                <li><a href="books.html">Книги</a> </li>
+                <li><a href="#">Рецензии</a> </li>
+                <li><a href="#auth">Войти</a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="about_us container">
+    <section class="container section_header">
+        <h2 class="section_title">Унесенные ветром</h2>
+        <!--        <div class="container_book flex_row flex-xs-column section_header">-->
+        <div class="section_text flex_row flex-xs-column">
+            <!--            <div class="container_book_img flex-4">-->
+            <div class="book_img flex-5">
+                <img src="https://picsum.photos/700">
+            </div>
+            <p class="flex-7"> Aвтор: <a href="#">Маргарет Митчелл</a><br>Год: 1936<br>Жанр: Роман<br>Количество томов: 2</p>
+        </div>
+    </section>
+    <section class="container section_header">
+        <h2 class="section_title">О чем книга?</h2>
+        <q class="section_suptitle">Я обо всем подумаю потом, когда найду в себе силы это выдержать ...</q>
+        <div class="section_text">
+            <p>Великая сага о Гражданской войне в США и о судьбе своенравной и готовой идти по головам Скарлетт О`Хара. Эта книга о том, что любовь к жизни бывает важнее любви; потом, когда рывок к выживанию успешно завершен, любовь становится предпочтительнее, но без жизнелюбия умирает и она.</p>
+        </div>
+    </section>
+
+    <section class="container section_header ">
+        <h2 class="section_title">Где купить?</h2>
+        <div class="grid_score score">
+            <div class="score_img">
+                <a href="#"> <img src="https://picsum.photos/700"> </a>
+            </div>
+            <div class="score_img">
+                <a href="#"><img src="https://picsum.photos/700"></a>
+            </div>
+            <div class="score_img">
+                <a href="https://www.litres.ru/margaret-mitchell/unesennye-vetrom-tom-1/"><img src="https://picsum.photos/700"></a>
+            </div>
+            <div class="score_img">
+                <a href="#"><img src="https://picsum.photos/700"></a>
+            </div>
+            <div class="score_img">
+                <a href="https://www.bookvoed.ru/book?id=10328145"><img src="https://picsum.photos/700"></a>
+            </div>
+            <div class="score_img">
+                <a href="#"><img src="https://picsum.photos/700"></a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="flex_row flex-xs-column">
+    <section class="flex-4">
+        <a class="foot1" href="about_us.html">O нас</a>
+    </section>
+    <section class="flex-4">
+        <a class="foot2"  href="#to">Написать нам</a>
+    </section>
+    <section class="not flex-4">
+        <p>Соц. сети</p>
+        <div>
+            <nav class=" social_footer">
+                <!--            <a href="#" classass="facebook"></a>-->
+                <!--            <a href="#" class="instagram"></a>-->
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </nav>
+        </div>
+    </section>
+</footer>
+
+
+<div class="modal dws-wrapper" id="auth">
+    <div class="dws-form">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label class="tab" for="tab1" title="Вкладка1">Авторизация</label>
+
+        <input type="radio" id="tab2" name="tabs">
+        <label class="tab" for="tab2" title="Вкладка2">Регистрация</label>
+
+        <form id="form1" class="tab-form">
+            <input class="input" type="email" placeholder="e-mail">
+            <input class="input" type="password" placeholder="password">
+            <input type="submit" class="input_form"  value="Войти">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <a href="#">Я забыл свой e-mail или пароль</a>
+        </form>
+
+        <form id="form2" class="tab-form">
+            <input  required  minlength="3" class="input" type="text" placeholder="Введите имя">
+            <input  required  minlength="5" class="input" type="email" placeholder="Введите e-mail адрес">
+            <input  required  minlength="10" class="input" type="password" placeholder="password">
+            <input type="submit"  class="input_form" value="Регистрация">
+            <div class="recover">
+                <input class="flex-3" type="checkbox" required>
+                <label class="flex-9">Ознакомлен(-а) и принимаю <a href="#"> условия регистрации</a></label>
+            </div>
+        </form>
+    </div>
+
+    <a class="close-modal" href="#0">X</a>
+</div>
+
+
+
+<div class="modal dws-wrapper" id="to">
+    <div class="dws-form-msg">
+        <label  class="tab3" for="form">Обратная связь</label>
+        <form id="form">
+            <input required  minlength="3" class="input" type="text" placeholder="Тема">
+            <input  required  minlength="3" class="input" type="text" placeholder="Ключевые слова">
+            <textarea required minlength="20" name="description" id="description" placeholder="Введите сообщение"></textarea>
+            <input type="submit" class="input_form"  value="Отправить">
+        </form>
+
+    </div>
+
+    <a class="close-modal" href="#0">X</a>
+</div>
+</body>
+</html>
